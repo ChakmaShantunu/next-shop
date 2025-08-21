@@ -1,9 +1,12 @@
 "use client";
+import { useSession, signOut } from 'next-auth/react'; // <-- signOut add korte hobe
 import Link from 'next/link';
 import React, { useState } from 'react'
 
 export default function NavBar() {
     const [open, setOpen] = useState(false);
+    const { data: session } = useSession();
+
     return (
         <div className='max-w-11/12 mx-auto'>
             <nav className="bg-[#0F0E0E] text-white p-4 flex items-center justify-between rounded-2xl">
@@ -17,8 +20,24 @@ export default function NavBar() {
                     <Link href="/products">Products</Link>
                     <Link href="/dashboard/add-product">Dashboard</Link>
                 </div>
+
+                {/* Login / Logout */}
                 <div>
-                    <Link href="/signUp"><button className='btn bg-[#EEEEEE] py-2 px-4 cursor-pointer text-black rounded-xl'>Sign Up</button></Link>
+                    {session ? (
+                        <>
+                            <span className="mr-4">Hi, {session.user.name}</span>
+                            <button
+                                onClick={() => signOut({ callbackUrl: "/login" })}
+                                className="px-3 py-1 bg-red-500 text-white rounded"
+                            >
+                                Logout
+                            </button>
+                        </>
+                    ) : (
+                        <Link href="/login" className="px-6 py-2 text-black rounded bg-[#EEEEEE] hover:bg-[#350a0a] hover:text-white">
+                            Login
+                        </Link>
+                    )}
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -34,7 +53,9 @@ export default function NavBar() {
                         <Link href="/" className="py-2" onClick={() => setOpen(false)}>Home</Link>
                         <Link href="/products" className="py-2" onClick={() => setOpen(false)}>Products</Link>
                         <Link href="/dashboard/add-product" className="py-2" onClick={() => setOpen(false)}>Dashboard</Link>
-                        <Link href="/login" className="py-2" onClick={() => setOpen(false)}>Login</Link>
+                        {!session && (
+                            <Link href="/login" className="py-2" onClick={() => setOpen(false)}>Login</Link>
+                        )}
                     </div>
                 )}
             </nav>

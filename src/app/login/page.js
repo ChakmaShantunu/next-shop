@@ -7,7 +7,7 @@ export default function Login() {
       <h1 className="text-4xl mb-6">Login</h1>
       <button
         onClick={() => signIn("google", { callbackUrl: "/products" })}
-        className="px-6 py-2 bg-blue-500 text-white rounded"
+        className="bg-[#541212] text-white px-6 py-2 rounded hover:bg-[#350a0a]"
       >
         Sign in with Google
       </button>
