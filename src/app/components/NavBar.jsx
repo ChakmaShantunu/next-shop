@@ -15,6 +15,7 @@ export default function NavBar() {
                 <div className="hidden md:flex space-x-4">
                     <Link href="/">Home</Link>
                     <Link href="/products">Products</Link>
+                    <Link href="/dashboard/add-product">Dashboard</Link>
                 </div>
                 <div>
                     <Link href="/signUp"><button className='btn bg-[#EEEEEE] py-2 px-4 cursor-pointer text-black rounded-xl'>Sign Up</button></Link>
@@ -32,6 +33,7 @@ export default function NavBar() {
                     <div className="absolute top-16 left-0 w-full bg-gray-800 flex flex-col items-center md:hidden">
                         <Link href="/" className="py-2" onClick={() => setOpen(false)}>Home</Link>
                         <Link href="/products" className="py-2" onClick={() => setOpen(false)}>Products</Link>
+                        <Link href="/dashboard/add-product" className="py-2" onClick={() => setOpen(false)}>Dashboard</Link>
                         <Link href="/login" className="py-2" onClick={() => setOpen(false)}>Login</Link>
                     </div>
                 )}
