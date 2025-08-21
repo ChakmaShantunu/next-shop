@@ -38,5 +38,101 @@
     "price": "$65",
     "image": "https://i.ibb.co/zTMDBDqF/1-83038a45-6828-4971-b02e-4a2630d443a7-1024x1024.webp",
     "tags": ["Fashion", "Shoes"]
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "description": "Portable Bluetooth speaker with rich sound.",
+    "price": "$55",
+    "image": "https://i.ibb.co/8DnfMKV3/35059169.jpg",
+    "tags": ["Electronics", "Audio"]
+  },
+  {
+    "id": 7,
+    "name": "Laptop Stand",
+    "description": "Adjustable laptop stand for better posture.",
+    "price": "$30",
+    "image": "https://i.ibb.co/bRBVtn3Y/ad9f52474ac7f379c329cb2ba47f68e0-jpg-720x720q80.jpg",
+    "tags": ["Office", "Accessories"]
+  },
+  {
+    "id": 8,
+    "name": "Mechanical Keyboard",
+    "description": "RGB mechanical keyboard for gamers and typists.",
+    "price": "$90",
+    "image": "https://i.ibb.co/GvBZHGBw/ziyoulang-freewolf-k87-single-backlit-wired-keyboard-2-500x500.jpg",
+    "tags": ["Gaming", "Accessories"]
+  },
+  {
+    "id": 9,
+    "name": "Fitness Band",
+    "description": "Track your daily activity and sleep patterns.",
+    "price": "$40",
+    "image": "https://i.ibb.co/27VxhBkg/ib82-Mv-G2w-Xd849s-PVki-ZN9w-Lm-Gzf1-Qpip-Gm-Hss-P3.webp",
+    "tags": ["Wearable", "Gadget"]
+  },
+  {
+    "id": 10,
+    "name": "Desk Lamp",
+    "description": "LED desk lamp with adjustable brightness.",
+    "price": "$25",
+    "image": "https://i.ibb.co/WvT4jfvH/Wi-WU-Desk-Lamp-4in1-Intelligent-Magnetic-Light.webp",
+    "tags": ["Office", "Furniture"]
+  },
+  {
+    "id": 11,
+    "name": "Gaming Chair",
+    "description": "Ergonomic gaming chair for long sessions.",
+    "price": "$200",
+    "image": "https://i.ibb.co/KzGzmb2n/Apex-bw.png",
+    "tags": ["Gaming", "Furniture"]
+  },
+  {
+    "id": 12,
+    "name": "Tablet",
+    "description": "High-resolution display tablet for work and play.",
+    "price": "$250",
+    "image": "https://i.ibb.co/TxqSRtNJ/TECLAST-T65-Max-LTE-Helio-G99-8-GB-256-GB-13-inch-Android-Tablet-1-320x320.webp",
+    "tags": ["Electronics", "Gadget"]
+  },
+  {
+    "id": 13,
+    "name": "Portable Hard Drive",
+    "description": "1TB external hard drive for backup and storage.",
+    "price": "$70",
+    "image": "https://i.ibb.co/LDYbwxJ2/Transcend-J25-M3-1-TB-500x500.jpg",
+    "tags": ["Electronics", "Storage"]
+  },
+  {
+    "id": 14,
+    "name": "Sunglasses",
+    "description": "Stylish UV-protection sunglasses.",
+    "price": "$35",
+    "image": "https://i.ibb.co/S40M8wrs/662854bd124a854eb7277247-wearme-pro-flat-top-polarized-lens.jpg",
+    "tags": ["Fashion", "Accessories"]
+  },
+  {
+    "id": 15,
+    "name": "Coffee Maker",
+    "description": "Brew delicious coffee at home.",
+    "price": "$120",
+    "image": "https://i.ibb.co/pj8w0cBp/46a562b3d69277472eeb8a66d1eaa7c8-jpg-720x720q80.jpg",
+    "tags": ["Kitchen", "Appliance"]
+  },
+  {
+    "id": 16,
+    "name": "Backpack",
+    "description": "Durable backpack with multiple compartments.",
+    "price": "$50",
+    "image": "https://i.ibb.co/cc521w4h/ff842f0e752cb914024b8ef46b0a4d1f.jpg",
+    "tags": ["Fashion", "Bags"]
+  },
+  {
+    "id": 17,
+    "name": "Electric Kettle",
+    "description": "Fast-boiling electric kettle for daily use.",
+    "price": "$30",
+    "image": "https://i.ibb.co/6RbH1wkq/70a30fd8-ad5d-4e30-b6b0-d9a72ca9f6f1.jpg",
+    "tags": ["Kitchen", "Appliance"]
   }
 ]
