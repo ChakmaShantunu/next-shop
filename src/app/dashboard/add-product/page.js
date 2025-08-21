@@ -28,7 +28,6 @@ export default function AddProduct() {
     setLoading(true);
 
     try {
-      // Example POST request to your backend API
       const res = await fetch("/api/products", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -52,46 +51,63 @@ export default function AddProduct() {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-10">
-      <h1 className="text-3xl font-bold mb-6">Add Product</h1>
+    <div className="w-full min-h-screen p-6 flex justify-center items-start">
+      <div className="w-full max-w-5xl bg-base-100 p-8 rounded-lg shadow-md">
+        <h1 className="text-3xl font-bold mb-6 text-center">Add Product</h1>
 
-      {message && (
-        <p className="mb-4 text-center text-green-600 font-medium">{message}</p>
-      )}
+        {message && (
+          <p className="mb-6 text-center text-green-600 font-medium">{message}</p>
+        )}
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <input
-          type="text"
-          placeholder="Product Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-          className="p-3 border rounded"
-        />
-        <textarea
-          placeholder="Product Description"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          required
-          className="p-3 border rounded"
-        />
-        <input
-          type="number"
-          placeholder="Price"
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-          required
-          className="p-3 border rounded"
-        />
+        <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full">
+          {/* Product Name */}
+          <div className="flex flex-col w-full">
+            <label className="mb-2 font-semibold">Product Name</label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter product name"
+              required
+              className="input w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
 
-        <button
-          type="submit"
-          disabled={loading}
-          className="bg-blue-500 text-white py-3 rounded hover:bg-blue-600"
-        >
-          {loading ? "Adding..." : "Add Product"}
-        </button>
-      </form>
+          {/* Product Description */}
+          <div className="flex flex-col w-full">
+            <label className="mb-2 font-semibold">Description</label>
+            <textarea
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              placeholder="Enter product description"
+              required
+              className="input w-full border rounded px-3 py-2 h-40 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          {/* Product Price */}
+          <div className="flex flex-col w-full">
+            <label className="mb-2 font-semibold">Price ($)</label>
+            <input
+              type="number"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+              placeholder="Enter product price"
+              required
+              className="input w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            disabled={loading}
+            className="px-6 py-2 text-black rounded bg-[#EEEEEE] hover:bg-[#350a0a] hover:text-white cursor-pointer"
+          >
+            {loading ? "Adding..." : "Add Product"}
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

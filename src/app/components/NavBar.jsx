@@ -28,13 +28,13 @@ export default function NavBar() {
                             <span className="mr-4">Hi, {session.user.name}</span>
                             <button
                                 onClick={() => signOut({ callbackUrl: "/login" })}
-                                className="px-3 py-1 bg-red-500 text-white rounded"
+                                className="px-6 py-2 text-black rounded bg-[#EEEEEE] hover:bg-[#350a0a] hover:text-white cursor-pointer"
                             >
                                 Logout
                             </button>
                         </>
                     ) : (
-                        <Link href="/login" className="px-6 py-2 text-black rounded bg-[#EEEEEE] hover:bg-[#350a0a] hover:text-white">
+                        <Link href="/login" className="px-6 py-2 text-black rounded bg-[#EEEEEE] hover:bg-[#350a0a] hover:text-white cursor-pointer">
                             Login
                         </Link>
                     )}
