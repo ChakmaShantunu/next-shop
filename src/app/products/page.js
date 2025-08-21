@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductsPage() {
     const [products, setProducts] = useState([]);
@@ -56,9 +57,11 @@ export default function ProductsPage() {
                                     </div>
                                 ))}
                             </div>
-                            <button className="btn bg-[#541212] text-white mt-3">
-                                Details
-                            </button>
+                            <Link href={`/products/${product.id}`}>
+                                <button className="btn bg-[#541212] text-white mt-3 rounded-xl">
+                                    Details
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 ))}
