@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "description": "High-quality wireless headphones with noise cancellation.",
+    "price": "$120",
+    "image": "https://i.ibb.co/gZsbmzFN/headphone.jpg",
+    "tags": ["Electronics", "Audio"]
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "description": "Track your health and fitness with this stylish smartwatch.",
+    "price": "$80",
+    "image": "https://i.ibb.co/cX2vSYbz/smart-watch.webp",
+    "tags": ["Wearable", "Gadget"]
+  },
+  {
+    "id": 3,
+    "name": "Gaming Mouse",
+    "description": "Ergonomic gaming mouse with customizable buttons.",
+    "price": "$45",
+    "image": "https://i.ibb.co/0pNXp3gK/Razer-Basilisk-V3-14.webp",
+    "tags": ["Gaming", "Accessories"]
+  },
+  {
+    "id": 4,
+    "name": "Office Chair",
+    "description": "Comfortable ergonomic chair for long working hours.",
+    "price": "$150",
+    "image": "https://i.ibb.co/Zzb5jFCz/executive-office-chair-black-color.webp",
+    "tags": ["Furniture", "Office"]
+  },
+  {
+    "id": 5,
+    "name": "Sneakers",
+    "description": "Lightweight running sneakers with breathable material.",
+    "price": "$65",
+    "image": "https://i.ibb.co/zTMDBDqF/1-83038a45-6828-4971-b02e-4a2630d443a7-1024x1024.webp",
+    "tags": ["Fashion", "Shoes"]
+  }
+]

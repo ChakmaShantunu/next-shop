@@ -1,27 +1,49 @@
 "use client";
-
-import React from "react";
-
-const products = [
-    { id: 1, name: "Product 1", description: "Description 1", price: "$10" },
-    { id: 2, name: "Product 2", description: "Description 2", price: "$20" },
-    { id: 3, name: "Product 3", description: "Description 3", price: "$30" },
-];
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function ProductsPage() {
-    return (
-        <div className="min-h-screen p-10 bg-gray-100">
-            <h1 className="text-4xl font-bold mb-6 text-center">Products</h1>
+    const [products, setProducts] = useState([]);
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    // Fetch data from products.json
+    useEffect(() => {
+        fetch("/products.json")
+            .then((res) => res.json())
+            .then((data) => setProducts(data));
+    }, []);
+
+    return (
+        <div className="p-6">
+            <h1 className="text-2xl font-bold mb-6">Products</h1>
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {products.map((product) => (
-                    <div key={product.id} className="border rounded p-4 bg-white shadow">
-                        <h2 className="text-2xl font-semibold mb-2">{product.name}</h2>
-                        <p className="mb-2">{product.description}</p>
-                        <p className="font-bold">{product.price}</p>
-                        <button className="mt-3 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                            Details
-                        </button>
+                    <div key={product.id} className="card bg-base-100 w-96 shadow-sm">
+                        <div className="w-[400px] h-[300px] overflow-hidden rounded-lg relative group cursor-pointer">
+                            <Image
+                                src={product.image}
+                                alt={product.name}
+                                fill
+                                className="object-contain transition-transform duration-300 transform group-hover:scale-110"
+                            />
+                        </div>
+
+                        <div className="card-body">
+                            <h2 className="card-title">
+                                {product.name}
+                                <div className="badge badge-secondary">NEW</div>
+                            </h2>
+                            <p>{product.description}</p>
+                            <p className="font-bold text-lg">{product.price}</p>
+                            <div className="card-actions justify-end">
+                                {product.tags.map((tag, index) => (
+                                    <div key={index} className="badge badge-outline">
+                                        {tag}
+                                    </div>
+                                ))}
+                            </div>
+                            <button className="btn bg-[#541212]  text-white mt-3">Details</button>
+                        </div>
                     </div>
                 ))}
             </div>
