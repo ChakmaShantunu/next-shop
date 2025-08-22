@@ -56,19 +56,21 @@ A simple e-commerce demo app built with **Next.js 15 (App Router)**, **NextAuth.
 - [Next.js 15](https://nextjs.org/) (App Router)  
 - [NextAuth.js](https://next-auth.js.org/) (Authentication)  
 - [React](https://react.dev/)  
-- [TailwindCSS](https://tailwindcss.com/)  
+- [TailwindCSS](https://tailwindcss.com/) 
+- [daisyUi](https://daisyui.com/) 
 
 ---
 
 
 ## ⚡ Getting Started  
 
-### 1️⃣ Clone the repository  
+### ⚙️ Setup & Installation Instructions 
 ```bash
 live site: https://next-shop-one-ruddy.vercel.app
 git client clone: https://github.com/ChakmaShantunu/next-shop.git
 git server clone:  https://github.com/ChakmaShantunu/next-shop-server.git
 cd next-shop
+npm install
 
 
 Setup Environment Variables
