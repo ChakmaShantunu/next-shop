@@ -8,7 +8,7 @@ export default function ProductDetailsPage() {
     const [product, setProduct] = useState(null);
     const router = useRouter();
 
-    // Fetch single product
+    
     useEffect(() => {
         fetch("/products.json")
             .then((res) => res.json())

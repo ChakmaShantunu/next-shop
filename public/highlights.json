@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "description": "High-quality wireless headphones with noise cancellation.",
+    "price": "$120",
+    "image": "https://i.ibb.co/gZsbmzFN/headphone.jpg",
+    "tags": ["Electronics", "Audio"]
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "description": "Track your health and fitness with this stylish smartwatch.",
+    "price": "$80",
+    "image": "https://i.ibb.co/cX2vSYbz/smart-watch.webp",
+    "tags": ["Wearable", "Gadget"]
+  },
+  {
+    "id": 3,
+    "name": "Gaming Mouse",
+    "description": "Ergonomic gaming mouse with customizable buttons.",
+    "price": "$45",
+    "image": "https://i.ibb.co/0pNXp3gK/Razer-Basilisk-V3-14.webp",
+    "tags": ["Gaming", "Accessories"]
+  }
+]

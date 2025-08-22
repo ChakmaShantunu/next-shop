@@ -13,7 +13,7 @@ export const authOptions = {
   },
   callbacks: {
     async redirect({ url, baseUrl }) {
-      return baseUrl + "/products"; // login successful → /products
+      return baseUrl + "/products";
     },
   },
 };
