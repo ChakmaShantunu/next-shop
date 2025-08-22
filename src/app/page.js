@@ -58,7 +58,7 @@ export default function Home() {
                 <span className="badge badge-secondary">NEW</span>
               </h2>
               <p className="flex-1 mt-2">{product.description}</p>
-              <p className="font-bold text-lg mt-2">${product.price}</p>
+              <p className="font-bold text-lg mt-2">{product.price}</p>
 
               <div className="card-actions flex-wrap gap-1 mt-2">
                 {Array.isArray(product.tags) &&

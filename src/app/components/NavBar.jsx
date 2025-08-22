@@ -10,7 +10,8 @@ export default function NavBar() {
     return (
         <div className='max-w-11/12 mx-auto'>
             <nav className="bg-[#0F0E0E] text-white p-4 flex items-center justify-between rounded-2xl">
-                <div className="text-xl font-bold">
+                <div className="text-xl font-bold flex items-center gap-4">
+                    <Link href="/"><img src="/Images/logo.png" className='w-10 h-10 rounded-full' alt="" /></Link>
                     <Link href="/">Next-Shop</Link>
                 </div>
 

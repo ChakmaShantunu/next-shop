@@ -2,9 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["i.ibb.co"],
+    domains: ["i.ibb.co"], // jekhane image host kora ache
   },
-  output: "export",
 };
 
 export default nextConfig;
